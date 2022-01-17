@@ -1,0 +1,42 @@
+body {
+    background-color: black;
+}
+
+.ball {
+    width: 75px;
+    height: 75px;
+    background-image: url(./pelota.png);
+    background-size: cover;
+    position: absolute;
+}
+
+.ball1 {
+    animation: move1 1s linear 3s 1 normal both;
+}
+
+.ball2 {
+    animation: move2 1s linear 10000s 1 normal both;
+    animation-play-state: paused;
+}
+
+@keyframes move1 {
+    from {
+        left: 10%;
+        top: 70%
+    }
+    to {
+        left: 50%;
+        top: 50%
+    }
+}
+
+@keyframes move2 {
+    from {
+        left: 50%;
+        top: 50%
+    }
+    to {
+        left: 70%;
+        top: 10%
+    }
+}

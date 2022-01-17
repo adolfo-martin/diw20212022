@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="ball ball1"></div>
+    <div class="ball ball2"></div>
+</body>
+
+<script>
+    // animationend
+
+    document.querySelector('.ball1')
+        .addEventListener('animationend', e =>
+            document.querySelector('.ball2').style.setProperty('animation-play-state', 'running')
+        )
+
+    document.querySelector('.ball2')
+        .addEventListener('animationstart', e => {
+            document.body.style.setProperty('background-color', 'red');
+            document.body.style.setProperty('animation-delay', '0s');
+            console.log('La segunda animación ha empezado ya');
+        }
+        )
+</script>
+
+</html>
