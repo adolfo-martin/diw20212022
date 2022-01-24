@@ -1,0 +1,126 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #f1d996;
+}
+
+header > h1 {
+  color: #0808a0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style: none;
+  padding: 0.5rem;
+  gap: 0.5rem;
+}
+
+nav ul li {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 1px;
+      flex-basis: 1px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  text-align: center;
+  background-color: brown;
+  display: inline-block;
+  width: 100%;
+  color: #f1d996;
+  padding: 0.5rem;
+}
+
+nav ul li a + ul {
+  display: none;
+}
+
+nav ul li a:focus + ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+}
+
+main > h1 {
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  color: #7e7ebe;
+  border-bottom: solid 3px #7e7ebe;
+}
+
+.wrapper-frutas {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+}
+
+.fruta-1 {
+  color: blue;
+}
+
+.fruta-2 {
+  color: green;
+}
+
+.fruta-3 {
+  color: purple;
+}
+
+.fruta-4 {
+  color: yellow;
+}
+
+.fruta-5 {
+  color: coral;
+}
+
+.fruta-6 {
+  color: cyan;
+}
+
+.fruta-7 {
+  color: grey;
+}
+
+.fruta-8 {
+  color: darkblue;
+}
+
+.fruta-9 {
+  color: olive;
+}
+
+.fruta-10 {
+  color: pink;
+}
+/*# sourceMappingURL=estilos.css.map */
