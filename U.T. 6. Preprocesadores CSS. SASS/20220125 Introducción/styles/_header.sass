@@ -1,0 +1,51 @@
+header
+    background-color: $color-dark
+    color: $color-medium
+    display: flex
+    align-items: center
+    padding: 1rem
+
+.company-logo
+    width: 100px
+
+.company-name
+    font-size: 2rem
+    text:
+        transform: uppercase
+        align: center
+    flex-grow: 1
+
+.menu-button
+    color: yellow
+
+    input[type="checkbox"]
+        display: none
+
+        &:checked + label
+            position: relative
+
+        &:checked + label div
+            &:nth-child(1)
+                margin-top: 0px
+                transform: rotate(45deg)
+                transform-origin: center
+                position: absolute
+            &:nth-child(2)
+                display: none
+                position: absolute
+            &:nth-child(3)
+                margin-top: 0px
+                transform: rotate(-45deg)
+                transform-origin: center
+                position: absolute
+                
+    label
+        display: inline-block
+        width: 2rem
+
+        div
+            width: 1.5rem
+            height: 4px
+            margin-top: 6px
+            background-color: $color-medium
+            transition: 500ms

@@ -1,0 +1,16 @@
+nav
+    display: flex
+    flex-direction: column
+    ul
+        list-style: none
+        li
+            background-color: $color-medium
+            padding: 10px 10px 0px 10px
+            transition-property: border-bottom font-weight
+            border-bottom: solid 5px transparent
+            &:hover
+                border-bottom: solid 5px $color-dark
+                font-weight: bold
+            a
+                text-decoration: none
+                color: $color-dark

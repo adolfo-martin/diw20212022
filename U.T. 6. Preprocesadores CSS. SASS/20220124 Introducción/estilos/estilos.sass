@@ -69,3 +69,7 @@ $colores: blue green purple yellow coral cyan grey darkblue olive pink
 @for $i from 1 through 10
     .fruta-#{$i}
         color: nth($colores, $i)
+
+@for $i from 1 through 10
+    .color-#{nth($colores, $i)}
+        color: nth($colores, $i)

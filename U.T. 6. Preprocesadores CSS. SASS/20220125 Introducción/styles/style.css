@@ -1,0 +1,123 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #e9d7d7;
+}
+
+header {
+  background-color: #410101;
+  color: #f08f8f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+.company-logo {
+  width: 100px;
+}
+
+.company-name {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.menu-button {
+  color: yellow;
+}
+
+.menu-button input[type="checkbox"] {
+  display: none;
+}
+
+.menu-button input[type="checkbox"]:checked + label {
+  position: relative;
+}
+
+.menu-button input[type="checkbox"]:checked + label div:nth-child(1) {
+  margin-top: 0px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  position: absolute;
+}
+
+.menu-button input[type="checkbox"]:checked + label div:nth-child(2) {
+  display: none;
+  position: absolute;
+}
+
+.menu-button input[type="checkbox"]:checked + label div:nth-child(3) {
+  margin-top: 0px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  position: absolute;
+}
+
+.menu-button label {
+  display: inline-block;
+  width: 2rem;
+}
+
+.menu-button label div {
+  width: 1.5rem;
+  height: 4px;
+  margin-top: 6px;
+  background-color: #f08f8f;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  background-color: #f08f8f;
+  padding: 10px 10px 0px 10px;
+  -webkit-transition-property: border-bottom font-weight;
+  transition-property: border-bottom font-weight;
+  border-bottom: solid 5px transparent;
+}
+
+nav ul li:hover {
+  border-bottom: solid 5px #410101;
+  font-weight: bold;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #410101;
+}
+/*# sourceMappingURL=style.css.map */
