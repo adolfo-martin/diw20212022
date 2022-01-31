@@ -1,0 +1,35 @@
+:root {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.mensaje, .mensaje-exito, .mensaje-advertencia, .mensaje-error, .mensaje-informativo {
+  font-size: 2rem;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.mensaje-exito {
+  color: green;
+  border: solid 2px green;
+  border-radius: 15px;
+}
+
+.mensaje-advertencia {
+  color: orange;
+  border: solid 2px orange;
+  border-radius: 15px;
+}
+
+.mensaje-error {
+  color: red;
+  border: solid 2px red;
+  border-radius: 15px;
+}
+
+.mensaje-informativo {
+  color: blue;
+  border: solid 2px blue;
+  border-radius: 15px;
+}
+/*# sourceMappingURL=style.css.map */
